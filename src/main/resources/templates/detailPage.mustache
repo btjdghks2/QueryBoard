@@ -1,0 +1,24 @@
+{{>layout/header}}
+
+{{#board}}
+    <div class="detailCss">
+        <a href="/detail/edit/{{id}}"  class="btn btn-primary">Edit</a>
+
+        <h1>{{title}}</h1>
+        <hr>
+        <h3>{{content}}</h3>
+        <a href="/" class="btn btn-primary">홈으로</a>
+    </div>
+
+    <a href="/detail/edit/{{id}}"  class="btn btn-primary">Edit</a>
+    <a href="/detail/delete/{{id}}"  class="btn btn-danger">Delete</a>
+{{/board}}
+<a href="/" class="btn btn-danger">back</a>
+<div>
+</div>
+{{>commentD/list}}
+{{>commentD/form}}
+
+
+
+{{>layout/footer}}
